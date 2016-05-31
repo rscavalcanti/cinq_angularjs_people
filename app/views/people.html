@@ -1,0 +1,32 @@
+
+<h1>Peoples</h1>
+
+<div><p>People List From Rest Service</p></div>
+
+<div ng-if="listPeoples" class="Table">
+
+    <div class="Heading">
+        <div class="Cell">
+            <p>Id</p>
+        </div>
+        <div class="Cell">
+            <p>Name</p>
+        </div>
+        <div class="Cell">
+            <p>DisclosableInfo</p>
+        </div>
+    </div>
+    <div ng-repeat="people in listPeoples" class="Row">
+        <div class="Cell">
+            {{people.id}}
+        </div>
+        <div class="Cell">
+            {{people.name}}
+        </div>
+        <div class="Cell">
+            {{people.disclosableInfo}}
+        </div>
+        </div>
+    </div>
+</div>
+</div>
